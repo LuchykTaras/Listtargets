@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мій список цілей</title>
+    <link rel="stylesheet" href="canvas.css">
+</head>
+<body>
+
+    <h1>Мій список цілей</h1>
+
+    <form id="goal-form">
+        <div class="form-group">
+            <input type="text" id="goal-input" placeholder="Введіть нову ціль...">
+            <button type="submit">Додати</button>
+        </div>
+        <span id="error-msg" class="error-message"></span>
+    </form>
+
+    <div class="filters">
+        <button type="button" class="filter-btn active" data-filter="all">Усі</button>
+        <button type="button" class="filter-btn" data-filter="active">Активні</button>
+        <button type="button" class="filter-btn" data-filter="completed">Виконані</button>
+    </div>
+
+    <div id="counter" class="counter">Усього: 0. Виконано: 0</div>
+
+    <ul id="goal-list"></ul>
+    <p id="empty-msg" class="empty-message">Поки що цілей немає</p>
+
+    <script src="momentum.js"></script>
+</body>
+</html>
